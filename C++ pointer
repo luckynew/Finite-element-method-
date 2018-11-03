@@ -23,3 +23,14 @@ int main(){
 2 2
 3 3
 */
+// another example //
+int main(){
+  std::vector<double> vec(2,3.6);
+  for ( std::vector<double> ::iterator it = vec.begin(); it != vec.end(); it++)
+    std::cout<<*it << std::endl;
+    
+  return 0;
+}
+/* Results:
+3.6
+3.6 */
