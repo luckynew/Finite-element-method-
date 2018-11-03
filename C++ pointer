@@ -1,0 +1,25 @@
+int main(){
+  int a, *b;
+  a = 4;
+  b = &a;
+  std::cout << a << std::endl;
+  std::cout << *b << std::endl;    
+  a = 10;
+  std::cout << a << std::endl;
+
+  std::vector<double> vec1(2,3.6), *vec2;
+  vec2 = &vec1;
+  std::cout << vec1.size() <<" "<< vec2->size() << std::endl;
+  vec1.resize(3,4.5);
+  std::cout << vec1.size() <<" "<< vec2->size() << std::endl;
+  
+  return 0;
+}
+
+/* the result is 
+4
+4
+10
+2 2
+3 3
+*/
