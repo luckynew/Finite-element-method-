@@ -1,0 +1,40 @@
+#include<iostream>
+#include<vector>
+
+double triangle_area1(double base, double height){
+  double area;
+  area = 1./2*base*height;
+  return area;
+}
+
+int main(){
+  double area;
+  area = triangle_area1(2.,3.);
+  std::cout << area << std::endl;
+  
+  return 0;
+}
+
+// Results: 3
+void triangle_area2(double base, double height, double &area){
+  area = 1./2*base*height;
+}
+
+void square_infor(double length, double &area, double &perimeter){
+  area = length*length;
+  perimeter = 4*length;
+}
+
+int main(){
+  double area;
+  double Area, Perimeter;
+  triangle_area2(2.,5., area);
+  std::cout << area << std::endl;
+  square_infor(4.,Area, Perimeter);
+  std::cout << Area << std::endl;
+  return 0;
+}
+// Results: 
+5
+16
+//
