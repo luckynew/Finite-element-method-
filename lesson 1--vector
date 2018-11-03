@@ -1,0 +1,23 @@
+#include<iostream>
+#include<vector>
+
+int main(){
+  std::vector <double> vec1;
+  std::vector <double> vec2(3);// The length of vec2 is 3.
+  std::vector <double> vec3(3,2.2);  // The lenthe of vec3 is 3 with each element is 2.2
+  std::cout<< "Hello word!" << std::endl;
+  std::cout<< vec3[1] << std::endl;
+  
+  return 0;
+}
+/* After that press "make run" in command line
+the corresponding results is : Hello word!
+                               2.2
+
+/* cd Desktop/Example
+ls
+cmake CMakelists.txt  # creat makefile
+make
+make run
+*/
+
